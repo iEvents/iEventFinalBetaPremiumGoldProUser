@@ -1,0 +1,26 @@
+/* Star-Input für Mobile */
+div.starinput {
+   margin-right: 7px
+}
+
+/* Tabelle in der Tabelle, für jQM 1.4 angepasst */
+.table-left {
+   width: 55%;
+   float: left;
+}
+.table-right {
+   width: 45%;
+   float: right;
+}
+
+/* Responsive Layout */
+@media all and (min-width: 650px) {
+   .content-list {
+      width: 35%;
+      float: left;
+   }
+   .content-details {
+      width: 60%;
+      float: right;
+   }
+}
