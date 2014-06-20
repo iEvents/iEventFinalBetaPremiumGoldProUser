@@ -171,17 +171,36 @@
 							<!-- V1.4 Changed -->
 							<h3>Share</h3>
 							<!-- Share Buttons -->
-							<div data-role="navbar">
-								<ul>
-									<li>
-										<a id="twitter" href="" >Share with Twitter</a>
-									</li>
-									<li>
-										<a id="facebook" href="" >Share with Facebook</a>
-									</li>
-									<!-- V1.4 Changed -->
-								</ul>
-							</div>
+								<!-- Tweet https://dev.twitter.com/docs/tweet-button#Examples -->
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Bald findet mein neuster Event statt! Antworte auf diesen Tweet, oder besuche meine Webseite um mehr zu erfahren." data-url="http://cuerography.com/">Tweet</a>
+									<script>
+										! function(d, s, id) {
+											var js, fjs = d.getElementsByTagName(s)[0];
+											if (!d.getElementById(id)) {
+												js = d.createElement(s);
+												js.id = id;
+												js.src = "https://platform.twitter.com/widgets.js";
+												fjs.parentNode.insertBefore(js, fjs);
+											}
+										}(document, "script", "twitter-wjs");
+									</script>
+							<!-- /Tweet -->
+							<!-- FB Share https://developers.facebook.com/docs/plugins/share-button -->
+							<div class="fb-share-button" data-href="http://cuerography.com/" data-type="button_count"></div>
+								<div id="fb-root"></div>
+									<script>
+										( function(d, s, id) {
+												var js, fjs = d.getElementsByTagName(s)[0];
+												if (d.getElementById(id))
+													return;
+												js = d.createElement(s);
+												js.id = id;
+												js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.0";
+												fjs.parentNode.insertBefore(js, fjs);
+											}(document, 'script', 'facebook-jssdk'));
+									</script>
+							
+							<!-- /FB Share -->
 							<!-- /Share Buttons -->
 						</div>
 					</div>
